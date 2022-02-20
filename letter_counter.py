@@ -1,12 +1,17 @@
-word = input("Enter the word: ")
-d = dict()
-for c in word:
-    if c not in d:
-        d[c] = 1
-    else:
-        d[c] = d[c] + 1
+def most_frequent(string):
+    d = dict()
+    for c in string:
+        if c not in d:
+            d[c] = 1
+        else:
+            d[c] = d[c] + 1
 
-lst=list(d.keys())
-lst.sort()
-for i in lst:
-    print(i, d[i])
+    lst=list(d.keys())
+    
+    for i in lst:
+        print(i, d[i])
+    
+
+
+word = input("Enter the word: ")
+most_frequent(word)
