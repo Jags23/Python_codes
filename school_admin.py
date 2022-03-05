@@ -22,9 +22,7 @@ if __name__=='__main__':
     cond=True
     while (cond):
         info=input('Enter student #{} information in the specified format--> (Name age contact email) :'.format(count))
-        print(info)
         lst=info.split(' ')
-        print(lst)
         print("\nEntered information is -\nName:{}\nAge:{}\nContact number:{}\nEmail:{}".format(lst[0],lst[1],lst[2],lst[3]))
         correct=input("Do you like to enter this information? :(Y/N)")
         if correct=='Y':
